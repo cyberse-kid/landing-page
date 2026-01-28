@@ -1,0 +1,180 @@
+<!-- Header / Navegación -->
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">
+      <h2>NC</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a (click)="scrollToSection('inicio')" class="nav-link">Inicio</a></li>
+      <li><a (click)="scrollToSection('sobre-mi')" class="nav-link">Sobre Mí</a></li>
+      <li><a (click)="scrollToSection('proyectos')" class="nav-link">Proyectos</a></li>
+      <li><a (click)="scrollToSection('contacto')" class="nav-link">Contáctame</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Sección Inicio -->
+<section id="inicio" class="section hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">¡Bienvenido a mi Portafolio!</h1>
+    <p class="hero-subtitle">Desarrollador Full Stack Junior</p>
+    <p class="hero-description">Creando soluciones digitales innovadoras</p>
+    <button (click)="scrollToSection('proyectos')" class="cta-button">Ver Proyectos</button>
+  </div>
+</section>
+
+<!-- Sección Sobre Mí -->
+<section id="sobre-mi" class="section about-section">
+  <div class="container">
+    <h2 class="section-title">Sobre Mí</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p class="about-intro">
+          Hola, soy <span class="highlight">Nicolás Contreras</span>, un desarrollador Full Stack Junior 
+          apasionado por crear experiencias digitales excepcionales.
+        </p>
+        <p class="about-description">
+          Cuento con sólidos conocimientos en lenguajes como <strong>Python</strong>, <strong>TypeScript</strong> 
+          y <strong>HTML</strong>. En el desarrollo de aplicaciones utilizo <strong>Django</strong> para el 
+          backend y <strong>Angular</strong> para el frontend, permitiéndome construir soluciones completas 
+          y escalables.
+        </p>
+        <p class="about-mission">
+          Mi objetivo es seguir creciendo profesionalmente mientras aporto valor a través de proyectos 
+          innovadores que marquen la diferencia.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>Angular, TypeScript, HTML, CSS</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>Django, Python</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Proyectos -->
+<section id="proyectos" class="section projects-section">
+  <div class="container">
+    <h2 class="section-title">Mis Proyectos</h2>
+    <div class="projects-grid">
+      
+      <!-- Proyecto 1: Sistema de Gestión Tributaria -->
+      <div class="project-card" (click)="navigateToProject('gestion-tributaria')">
+        <div class="project-icon">📊</div>
+        <h3 class="project-title">Sistema de Gestión Tributaria</h3>
+        <p class="project-description">
+          Aplicación web desarrollada con Angular y Django para la gestión y almacenamiento 
+          eficiente de datos tributarios. Facilita el control y organización de información 
+          fiscal de manera segura y accesible.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Angular</span>
+          <span class="tag">Django</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="project-link">Ver más →</div>
+      </div>
+
+      <!-- Proyecto 2: SmartRecruit -->
+      <div class="project-card" (click)="navigateToProject('smartrecruit')">
+        <div class="project-icon">🤖</div>
+        <h3 class="project-title">SmartRecruit</h3>
+        <p class="project-description">
+          Software inteligente de selección de personal que revoluciona el proceso de reclutamiento. 
+          Utiliza IA para filtrar y analizar currículums automáticamente, además de optimizar 
+          entrevistas laborales mediante análisis predictivo.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Inteligencia Artificial</span>
+          <span class="tag">Angular</span>
+          <span class="tag">Django</span>
+        </div>
+        <div class="project-link">Ver más →</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="section contact-section">
+  <div class="container">
+    <h2 class="section-title">Contáctame</h2>
+    <p class="contact-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+    
+    <div class="contact-grid">
+      
+      <!-- Redes Sociales -->
+      <div class="social-links">
+        <h3>Sígueme en mis redes</h3>
+        
+        <a href="https://www.instagram.com/nicolas_click.wise" target="_blank" class="social-card instagram">
+          <div class="social-icon">📷</div>
+          <div class="social-info">
+            <span class="social-name">Instagram</span>
+            <span class="social-handle">@nicolas_click.wise</span>
+          </div>
+        </a>
+
+        <a href="https://www.tiktok.com/@nicolas_click.wise" target="_blank" class="social-card tiktok">
+          <div class="social-icon">🎵</div>
+          <div class="social-info">
+            <span class="social-name">TikTok</span>
+            <span class="social-handle">@nicolas_click.wise</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/56933674123" target="_blank" class="social-card whatsapp">
+          <div class="social-icon">💬</div>
+          <div class="social-info">
+            <span class="social-name">WhatsApp</span>
+            <span class="social-handle">+56 9 3367 4123</span>
+          </div>
+        </a>
+
+        <a href="mailto:nicolas.contreras76@inacapmail.cl" class="social-card email">
+          <div class="social-icon">✉️</div>
+          <div class="social-info">
+            <span class="social-name">Email</span>
+            <span class="social-handle">nicolas.contreras76@inacapmail.cl</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Formulario de Contacto -->
+      <div class="contact-form-wrapper">
+        <h3>Envíame un mensaje</h3>
+        <form class="contact-form" (ngSubmit)="sendEmail()">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" [(ngModel)]="contactForm.name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" [(ngModel)]="contactForm.email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" [(ngModel)]="contactForm.message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-button">Enviar Mensaje</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2024 Nicolás Contreras. Todos los derechos reservados.</p>
+</footer>
