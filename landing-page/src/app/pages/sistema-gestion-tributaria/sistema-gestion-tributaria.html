@@ -1,72 +1,216 @@
-<div class="project-detail">
-  <button class="back-button" (click)="goBack()">← Volver al portafolio</button>
-  
-  <div class="project-header">
-    <div class="project-icon-large">📊</div>
-    <h1 class="project-title">Sistema de Gestión Tributaria</h1>
-    <p class="project-tagline">Gestión eficiente de datos fiscales</p>
+<div class="project-page">
+  <!-- Header fijo -->
+  <header class="project-header-nav">
+    <div class="header-content">
+      <button class="back-button" (click)="goBack()">
+        <span class="back-icon">←</span>
+        Volver al Portafolio
+      </button>
+      <h2 class="header-title">Sistema de Gestión Tributaria</h2>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="project-detail">
+    <!-- Hero section -->
+    <div class="project-hero">
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <div class="project-icon-large">📊</div>
+        <h1 class="project-title">Sistema de Gestión Tributaria</h1>
+        <p class="project-tagline">Gestión Eficiente de Instrumentos Financieros</p>
+        <div class="project-badges">
+          <span class="badge-primary">Gestión Financiera</span>
+          <span class="badge-secondary">Base de Datos</span>
+          <span class="badge-accent">CRUD Operations</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <!-- Descripción General -->
+      <section class="overview-section">
+        <div class="section-icon">📋</div>
+        <h2>Descripción General</h2>
+        <p>
+          El Sistema de Gestión Tributaria es una solución web desarrollada para resolver las necesidades 
+          de la empresa Nuam, que requería una plataforma intuitiva para inscribir instrumentos financieros. 
+          El sistema incluye una base de datos robusta para almacenar toda la documentación relacionada, 
+          con funcionalidades avanzadas para filtrar, crear y eliminar instrumentos de manera segura y eficiente. 
+          Desarrollado con Angular en el frontend y Django en el backend, garantiza una experiencia de usuario 
+          fluida y un manejo de datos confiable, optimizando los procesos tributarios y financieros de la empresa.
+        </p>
+      </section>
+
+      <!-- Galería de Screenshots -->
+        <div class="screenshots-grid">
+          <div class="screenshot-container featured">
+            <img
+              src="/images/proyectos/gestion-tributaria/home.png"
+              alt="Página principal Sistema de Gestión Tributaria"
+              loading="eager"
+              fetchpriority="high"
+              class="screenshot-img"
+              (click)="openImage('/images/proyectos/gestion-tributaria/home.png')"
+            >
+            <div class="screenshot-overlay">
+              <p class="screenshot-caption">Página Principal</p>
+            </div>
+          </div>
+
+          <div class="screenshot-container">
+            <img
+              src="/images/proyectos/gestion-tributaria/dashboard.png"
+              alt="Dashboard principal Sistema de Gestión Tributaria"
+              loading="lazy"
+              class="screenshot-img"
+              (click)="openImage('/images/proyectos/gestion-tributaria/dashboard.png')"
+            >
+            <div class="screenshot-overlay">
+              <p class="screenshot-caption">Dashboard Principal</p>
+            </div>
+          </div>
+
+          <div class="screenshot-container">
+            <img
+              src="/images/proyectos/gestion-tributaria/formulario.png"
+              alt="Formulario de inscripción de instrumentos"
+              loading="lazy"
+              class="screenshot-img"
+              (click)="openImage('/images/proyectos/gestion-tributaria/formulario.png')"
+            >
+            <div class="screenshot-overlay">
+              <p class="screenshot-caption">Inscripción de Instrumentos</p>
+            </div>
+          </div>
+
+          <div class="screenshot-container">
+            <img
+              src="/images/proyectos/gestion-tributaria/lista.png"
+              alt="Filtros y búsqueda de instrumentos"
+              loading="lazy"
+              class="screenshot-img"
+              (click)="openImage('/images/proyectos/gestion-tributaria/lista.png')"
+            >
+            <div class="screenshot-overlay">
+              <p class="screenshot-caption">Filtros Avanzados</p>
+            </div>
+          </div>
+        </div>
+
+      <!-- Características Principales -->
+      <section class="features-section">
+        <div class="section-icon">⭐</div>
+        <h2>Características Principales</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>Inscripción de Instrumentos</h3>
+            <p>Interfaz intuitiva para registrar nuevos instrumentos financieros con validaciones en tiempo real</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🗃️</div>
+            <h3>Base de Datos Documental</h3>
+            <p>Almacenamiento seguro de toda la documentación relacionada con cada instrumento</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Filtros Avanzados</h3>
+            <p>Herramientas para buscar y filtrar instrumentos por criterios específicos como tipo, fecha o estado</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">➕</div>
+            <h3>Operaciones CRUD</h3>
+            <p>Funcionalidades completas para crear, leer, actualizar y eliminar instrumentos de manera eficiente</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Seguridad y Autenticación</h3>
+            <p>Sistema de login seguro con permisos basados en roles para proteger la información sensible</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Reportes y Estadísticas</h3>
+            <p>Generación de reportes automáticos sobre el estado de los instrumentos y tendencias tributarias</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tecnologías -->
+      <section class="technologies-section">
+        <div class="section-icon">💻</div>
+        <h2>Stack Tecnológico</h2>
+        <div class="tech-stack">
+          <span class="tech-badge">Angular</span>
+          <span class="tech-badge">TypeScript</span>
+          <span class="tech-badge">Django</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">SQLite</span>
+          <span class="tech-badge">REST API</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">HTML</span>
+        </div>
+      </section>
+
+      <!-- Beneficios -->
+      <section class="benefits-section">
+        <div class="section-icon">💡</div>
+        <h2>Beneficios del Sistema</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-number">70%</div>
+            <h4>Reducción de Errores</h4>
+            <p>Validaciones automáticas minimizan errores en la inscripción de instrumentos</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-number">50%</div>
+            <h4>Ahorro de Tiempo</h4>
+            <p>Procesos automatizados aceleran la gestión tributaria</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-number">100%</div>
+            <h4>Acceso Seguro</h4>
+            <p>Protección total de datos sensibles con autenticación robusta</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-number">24/7</div>
+            <h4>Disponibilidad</h4>
+            <p>Sistema web accesible en cualquier momento para operaciones críticas</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 
-  <div class="project-content">
-    <section class="overview">
-      <h2>Descripción General</h2>
-      <p>
-        Sistema integral desarrollado con Angular y Django diseñado para facilitar 
-        la gestión y almacenamiento de datos tributarios. Esta aplicación web proporciona 
-        una plataforma segura y eficiente para el manejo de información fiscal, permitiendo 
-        a los usuarios organizar, consultar y mantener registros tributarios de manera 
-        centralizada.
-      </p>
-    </section>
-
-    <section class="features">
-      <h2>Características Principales</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🔐</div>
-          <h3>Seguridad Avanzada</h3>
-          <p>Encriptación de datos y control de acceso por roles</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💾</div>
-          <h3>Almacenamiento Estructurado</h3>
-          <p>Base de datos optimizada para información tributaria</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📱</div>
-          <h3>Interfaz Responsiva</h3>
-          <p>Acceso desde cualquier dispositivo</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📊</div>
-          <h3>Reportes Automáticos</h3>
-          <p>Generación de informes y estadísticas</p>
-        </div>
+  <!-- Footer -->
+  <footer class="project-footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>¿Te interesa este proyecto?</h3>
+        <p>Contáctame para más información o para discutir cómo puedo ayudarte con soluciones similares en gestión financiera.</p>
       </div>
-    </section>
-
-    <section class="technologies">
-      <h2>Tecnologías Utilizadas</h2>
-      <div class="tech-stack">
-        <span class="tech-badge">Angular</span>
-        <span class="tech-badge">TypeScript</span>
-        <span class="tech-badge">Django</span>
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">PostgreSQL</span>
-        <span class="tech-badge">REST API</span>
+      <div class="footer-actions">
+        <a href="https://wa.me/56933674123" target="_blank" class="whatsapp-button">
+          <span class="whatsapp-icon">💬</span>
+          Contactar por WhatsApp
+        </a>
+        <button class="back-to-home-button" (click)="goBack()">
+          Volver al Portafolio
+        </button>
       </div>
-    </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Nicolás Contreras - Desarrollador Full Stack Junior</p>
+    </div>
+  </footer>
 
-    <section class="screenshots">
-      <h2>Capturas de Pantalla</h2>
-      <div class="screenshots-grid">
-        <div class="screenshot-placeholder">
-          <p>Dashboard Principal</p>
-        </div>
-        <div class="screenshot-placeholder">
-          <p>Gestión de Datos</p>
-        </div>
-      </div>
-    </section>
+  <div class="image-lightbox" *ngIf="selectedImage" (click)="closeImage()">
+    <img
+      [src]="selectedImage"
+      class="lightbox-image"
+      (click)="$event.stopPropagation()">
+
+    <button class="lightbox-close" (click)="closeImage()">✕</button>
   </div>
+
 </div>
