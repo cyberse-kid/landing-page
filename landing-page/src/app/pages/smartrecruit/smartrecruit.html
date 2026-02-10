@@ -1,108 +1,214 @@
-<div class="project-detail">
-  <button class="back-button" (click)="goBack()">← Volver al portafolio</button>
-  
-  <div class="project-header">
-    <div class="project-icon-large">🤖</div>
-    <h1 class="project-title">SmartRecruit</h1>
-    <p class="project-tagline">Reclutamiento inteligente con IA</p>
-  </div>
+<div class="project-page">
+  <!-- Header fijo -->
+  <header class="project-header-nav">
+    <div class="header-content">
+      <button class="back-button" (click)="goBack()">
+        <span class="back-icon">←</span>
+        Volver al Portafolio
+      </button>
+      <h2 class="header-title">SmartRecruit</h2>
+    </div>
+  </header>
 
-  <div class="project-content">
-    <section class="overview">
-      <h2>Descripción General</h2>
-      <p>
-        SmartRecruit es una solución innovadora de software que revoluciona el proceso de 
-        selección de personal mediante el uso de Inteligencia Artificial. El sistema 
-        automatiza y optimiza cada etapa del reclutamiento, desde el filtrado inicial de 
-        currículums hasta el análisis de entrevistas, permitiendo a las empresas encontrar 
-        a los candidatos ideales de manera más eficiente y objetiva.
-      </p>
-    </section>
-
-    <section class="features">
-      <h2>Características Principales</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🔍</div>
-          <h3>Filtrado Inteligente de CV</h3>
-          <p>IA que analiza y clasifica currículums automáticamente según criterios específicos</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📄</div>
-          <h3>Análisis Profundo de Perfiles</h3>
-          <p>Evaluación detallada de habilidades, experiencia y compatibilidad cultural</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎤</div>
-          <h3>Optimización de Entrevistas</h3>
-          <p>Herramientas para estructurar y evaluar entrevistas de manera objetiva</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📊</div>
-          <h3>Análisis Predictivo</h3>
-          <p>Predicción de éxito del candidato basado en datos históricos</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>Proceso Automatizado</h3>
-          <p>Reducción de tiempo de contratación en un 60%</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <h3>Matching Preciso</h3>
-          <p>Algoritmos de IA para encontrar la mejor coincidencia candidato-puesto</p>
+  <!-- Contenido principal -->
+  <div class="project-detail">
+    <!-- Hero section -->
+    <div class="project-hero">
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <div class="project-icon-large">🤖</div>
+        <h1 class="project-title">SmartRecruit</h1>
+        <p class="project-tagline">Reclutamiento Inteligente Impulsado por IA</p>
+        <div class="project-badges">
+          <span class="badge-primary">Inteligencia Artificial</span>
+          <span class="badge-secondary">Machine Learning</span>
+          <span class="badge-accent">NLP</span>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="technologies">
-      <h2>Tecnologías Utilizadas</h2>
-      <div class="tech-stack">
-        <span class="tech-badge">Angular</span>
-        <span class="tech-badge">TypeScript</span>
-        <span class="tech-badge">Django</span>
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">Machine Learning</span>
-        <span class="tech-badge">Natural Language Processing</span>
-        <span class="tech-badge">TensorFlow</span>
-        <span class="tech-badge">REST API</span>
-      </div>
-    </section>
+    <div class="project-content">
+      <!-- Descripción General -->
+      <section class="overview-section">
+        <div class="section-icon">📋</div>
+        <h2>Descripción General</h2>
+        <p>
+          SmartRecruit es una solución innovadora de software que revoluciona el proceso de 
+          selección de personal mediante el uso de Inteligencia Artificial. El sistema 
+          automatiza y optimiza cada etapa del reclutamiento, desde el filtrado inicial de 
+          currículums hasta el análisis de entrevistas, permitiendo a las empresas encontrar 
+          a los candidatos ideales de manera más eficiente y objetiva.
+        </p>
+      </section>
 
-    <section class="benefits">
-      <h2>Beneficios del Sistema</h2>
-      <ul class="benefits-list">
-        <li>
-          <strong>Ahorro de Tiempo:</strong> Automatización del 80% del proceso de filtrado inicial
-        </li>
-        <li>
-          <strong>Reducción de Sesgos:</strong> Evaluación objetiva basada en datos y competencias
-        </li>
-        <li>
-          <strong>Mejora en la Calidad:</strong> Identificación precisa de candidatos con mayor potencial
-        </li>
-        <li>
-          <strong>Experiencia del Candidato:</strong> Proceso más rápido y transparente
-        </li>
-        <li>
-          <strong>Toma de Decisiones:</strong> Dashboards con métricas clave y reportes detallados
-        </li>
-      </ul>
-    </section>
-
-    <section class="screenshots">
-      <h2>Capturas de Pantalla</h2>
+      <!-- Galería de Screenshots -->
       <div class="screenshots-grid">
-        <div class="screenshot-placeholder">
-          <p>Dashboard de Candidatos</p>
+        <div class="screenshot-container">
+          <img
+            src="assets/images/proyectos/smartrecruit/inicio-de-sesion.png"
+            alt="Inicio de sesión SmartRecruit"
+            loading="lazy"
+            class="screenshot-img"
+          >
+          <div class="screenshot-overlay">
+            <p class="screenshot-caption">Inicio de Sesión</p>
+          </div>
         </div>
-        <div class="screenshot-placeholder">
-          <p>Análisis de CV con IA</p>
+
+        <div class="screenshot-container featured">
+          <img
+            src="assets/images/proyectos/smartrecruit/dashboard.png"
+            alt="Dashboard principal SmartRecruit"
+            loading="eager"
+            fetchpriority="high"
+            class="screenshot-img"
+          >
+          <div class="screenshot-overlay">
+            <p class="screenshot-caption">Dashboard Principal</p>
+          </div>
         </div>
-        <div class="screenshot-placeholder">
-          <p>Sistema de Entrevistas</p>
+
+        <div class="screenshot-container">
+          <img
+            src="assets/images/proyectos/smartrecruit/analisis.png"
+            alt="Análisis de CV con IA"
+            loading="lazy"
+            class="screenshot-img"
+          >
+          <div class="screenshot-overlay">
+            <p class="screenshot-caption">Análisis de CV con IA</p>
+          </div>
+        </div>
+
+        <div class="screenshot-container">
+          <img
+            src="assets/images/proyectos/smartrecruit/formulario.png"
+            alt="Formulario de registro"
+            loading="lazy"
+            class="screenshot-img"
+          >
+          <div class="screenshot-overlay">
+            <p class="screenshot-caption">Registro de Candidatos</p>
+          </div>
+        </div>
+
+        <div class="screenshot-container">
+          <img
+            src="assets/images/proyectos/smartrecruit/modulo-ia.png"
+            alt="Módulo de Inteligencia Artificial"
+            loading="lazy"
+            class="screenshot-img"
+          >
+          <div class="screenshot-overlay">
+            <p class="screenshot-caption">Módulo de IA</p>
+          </div>
         </div>
       </div>
-    </section>
+
+
+      <!-- Características Principales -->
+      <section class="features-section">
+        <div class="section-icon">⭐</div>
+        <h2>Características Principales</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Filtrado Inteligente de CV</h3>
+            <p>IA que analiza y clasifica currículums automáticamente según criterios específicos</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📄</div>
+            <h3>Análisis Profundo de Perfiles</h3>
+            <p>Evaluación detallada de habilidades, experiencia y compatibilidad cultural</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎤</div>
+            <h3>Optimización de Entrevistas</h3>
+            <p>Herramientas para estructurar y evaluar entrevistas de manera objetiva</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Análisis Predictivo</h3>
+            <p>Predicción de éxito del candidato basado en datos históricos</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Proceso Automatizado</h3>
+            <p>Reducción de tiempo de contratación en un 60%</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Matching Preciso</h3>
+            <p>Algoritmos de IA para encontrar la mejor coincidencia candidato-puesto</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tecnologías -->
+      <section class="technologies-section">
+        <div class="section-icon">💻</div>
+        <h2>Stack Tecnológico</h2>
+        <div class="tech-stack">
+          <span class="tech-badge">Angular</span>
+          <span class="tech-badge">TypeScript</span>
+          <span class="tech-badge">Django</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">Machine Learning</span>
+          <span class="tech-badge">Natural Language Processing</span>
+          <span class="tech-badge">TensorFlow</span>
+          <span class="tech-badge">REST API</span>
+        </div>
+      </section>
+
+      <!-- Beneficios -->
+      <section class="benefits-section">
+        <div class="section-icon">💡</div>
+        <h2>Beneficios del Sistema</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-number">80%</div>
+            <h4>Ahorro de Tiempo</h4>
+            <p>Automatización del proceso de filtrado inicial</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-number">60%</div>
+            <h4>Reducción de Sesgos</h4>
+            <p>Evaluación objetiva basada en datos</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-number">95%</div>
+            <h4>Precisión</h4>
+            <p>Identificación de candidatos ideales</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-number">3x</div>
+            <h4>Velocidad</h4>
+            <p>Proceso tres veces más rápido</p>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="project-footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>¿Te interesa este proyecto?</h3>
+        <p>Contáctame para más información o para discutir cómo puedo ayudarte con soluciones similares.</p>
+      </div>
+      <div class="footer-actions">
+        <a href="https://wa.me/56933674123" target="_blank" class="whatsapp-button">
+          <span class="whatsapp-icon">💬</span>
+          Contactar por WhatsApp
+        </a>
+        <button class="back-to-home-button" (click)="goBack()">
+          Volver al Portafolio
+        </button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Nicolás Contreras - Desarrollador Full Stack Junior</p>
+    </div>
+  </footer>
 </div>

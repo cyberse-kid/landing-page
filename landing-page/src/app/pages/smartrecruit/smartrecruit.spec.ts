@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Smartrecruit } from './smartrecruit';
+import { SmartrecruitComponent } from './smartrecruit';
 
 describe('Smartrecruit', () => {
-  let component: Smartrecruit;
-  let fixture: ComponentFixture<Smartrecruit>;
+  let component: SmartrecruitComponent;
+  let fixture: ComponentFixture<SmartrecruitComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Smartrecruit]
+      imports: [SmartrecruitComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Smartrecruit);
+    fixture = TestBed.createComponent(SmartrecruitComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
