@@ -244,6 +244,62 @@
   min-height: 250px;
 }
 
+.screenshot-img {
+  cursor: zoom-in;
+  transition: transform .3s ease;
+}
+
+.screenshot-container:hover .screenshot-img {
+  transform: scale(1.03);
+}
+
+
+/* Lightbox fondo */
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+/* Imagen grande */
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  cursor: default;
+  animation: zoomIn 0.25s ease;
+}
+
+/* Botón cerrar */
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Animación suave */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 
 .screenshot-container:hover {

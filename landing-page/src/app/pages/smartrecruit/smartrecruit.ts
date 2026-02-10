@@ -27,4 +27,15 @@ export class SmartrecruitComponent implements OnInit {
   goBack(): void {
     this.router.navigate(['/']);
   }
+
+  selectedImage: string | null = null;
+
+  openImage(src: string) {
+    this.selectedImage = src;
+  }
+
+  closeImage() {
+    this.selectedImage = null;
+  }
+
 }
