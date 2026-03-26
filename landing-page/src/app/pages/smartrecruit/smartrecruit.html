@@ -6,7 +6,7 @@
         <span class="back-icon">←</span>
         Volver al Portafolio
       </button>
-      <h2 class="header-title">SmartRecruit</h2>
+      <h2 class="header-title">SmartIRecruit</h2>
     </div>
   </header>
 
@@ -17,12 +17,12 @@
       <div class="hero-background"></div>
       <div class="hero-content">
         <div class="project-icon-large">🤖</div>
-        <h1 class="project-title">SmartRecruit</h1>
-        <p class="project-tagline">Reclutamiento Inteligente Impulsado por IA</p>
+        <h1 class="project-title">SmartIRecruit</h1>
+        <p class="project-tagline">Plataforma de Reclutamiento Inteligente con IA y Análisis de Emociones en Tiempo Real</p>
         <div class="project-badges">
           <span class="badge-primary">Inteligencia Artificial</span>
-          <span class="badge-secondary">Machine Learning</span>
-          <span class="badge-accent">NLP</span>
+          <span class="badge-secondary">Visión por Computadora</span>
+          <span class="badge-accent">Análisis de Emociones</span>
         </div>
       </div>
     </div>
@@ -33,11 +33,13 @@
         <div class="section-icon">📋</div>
         <h2>Descripción General</h2>
         <p>
-          SmartRecruit es una solución innovadora de software que revoluciona el proceso de 
-          selección de personal mediante el uso de Inteligencia Artificial. El sistema 
-          automatiza y optimiza cada etapa del reclutamiento, desde el filtrado inicial de 
-          currículums hasta el análisis de entrevistas, permitiendo a las empresas encontrar 
-          a los candidatos ideales de manera más eficiente y objetiva.
+          SmartIRecruit es una plataforma full stack que automatiza y objetiviza el proceso de selección
+          de personal combinando un filtro ATS inteligente con análisis de video en tiempo real.
+          Durante las entrevistas grabadas, el sistema detecta y analiza emociones del candidato
+          usando visión por computadora (DeepFace + OpenCV), reduciendo el sesgo humano en la
+          evaluación. El backend integra Groq API como LLM para el análisis automatizado de CVs
+          y respuestas, mientras el frontend en React ofrece un panel completo para reclutadores
+          con métricas por candidato.
         </p>
       </section>
 
@@ -47,7 +49,7 @@
         <div class="screenshot-container featured">
           <img
             src="images/proyectos/smartrecruit/dashboard.png"
-            alt="Dashboard principal SmartRecruit"
+            alt="Dashboard principal SmartIRecruit"
             loading="eager"
             fetchpriority="high"
             class="screenshot-img"
@@ -61,7 +63,7 @@
         <div class="screenshot-container">
           <img
             src="images/proyectos/smartrecruit/inicio-de-sesion.png"
-            alt="Inicio de sesión SmartRecruit"
+            alt="Inicio de sesión SmartIRecruit"
             loading="lazy"
             class="screenshot-img"
             (click)="openImage('images/proyectos/smartrecruit/inicio-de-sesion.png')"
@@ -87,7 +89,7 @@
         <div class="screenshot-container">
           <img
             src="images/proyectos/smartrecruit/formulario.png"
-            alt="Formulario de registro"
+            alt="Formulario de registro de candidatos"
             loading="lazy"
             class="screenshot-img"
             (click)="openImage('images/proyectos/smartrecruit/formulario.png')"
@@ -100,13 +102,13 @@
         <div class="screenshot-container">
           <img
             src="images/proyectos/smartrecruit/modulo-ia.png"
-            alt="Módulo de Inteligencia Artificial"
+            alt="Módulo de Inteligencia Artificial y análisis de emociones"
             loading="lazy"
             class="screenshot-img"
             (click)="openImage('images/proyectos/smartrecruit/modulo-ia.png')"
           >
           <div class="screenshot-overlay">
-            <p class="screenshot-caption">Módulo de IA</p>
+            <p class="screenshot-caption">Módulo de IA y Emociones</p>
           </div>
         </div>
       </div>
@@ -118,34 +120,34 @@
         <h2>Características Principales</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon">🔍</div>
-            <h3>Filtrado Inteligente de CV</h3>
-            <p>IA que analiza y clasifica currículums automáticamente según criterios específicos</p>
+            <div class="feature-icon">🎭</div>
+            <h3>Análisis de Emociones en Tiempo Real</h3>
+            <p>Detección de emociones del candidato durante la entrevista grabada mediante DeepFace y OpenCV, reduciendo el sesgo subjetivo en la evaluación</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📄</div>
-            <h3>Análisis Profundo de Perfiles</h3>
-            <p>Evaluación detallada de habilidades, experiencia y compatibilidad cultural</p>
+            <div class="feature-icon">🔍</div>
+            <h3>Filtro ATS Inteligente</h3>
+            <p>Análisis automatizado de CVs usando Groq API como LLM, clasificando candidatos según criterios del puesto de forma objetiva</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎤</div>
-            <h3>Optimización de Entrevistas</h3>
-            <p>Herramientas para estructurar y evaluar entrevistas de manera objetiva</p>
+            <h3>Evaluación de Entrevistas</h3>
+            <p>Análisis de respuestas de candidatos mediante IA para evaluar coherencia, relevancia y alineación con el perfil buscado</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📊</div>
-            <h3>Análisis Predictivo</h3>
-            <p>Predicción de éxito del candidato basado en datos históricos</p>
+            <h3>Panel de Reclutador</h3>
+            <p>Dashboard con métricas por candidato: puntuación de CV, resultados emocionales y ranking automático de postulantes</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
-            <h3>Proceso Automatizado</h3>
-            <p>Reducción de tiempo de contratación en un 60%</p>
+            <h3>Proceso Automatizado End-to-End</h3>
+            <p>Pipeline completo desde la postulación hasta la preselección final, automatizando el 80% del proceso de reclutamiento</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🎯</div>
-            <h3>Matching Preciso</h3>
-            <p>Algoritmos de IA para encontrar la mejor coincidencia candidato-puesto</p>
+            <div class="feature-icon">🔒</div>
+            <h3>API REST Segura</h3>
+            <p>Backend con Django y autenticación robusta para el manejo seguro de datos de candidatos y resultados del análisis</p>
           </div>
         </div>
       </section>
@@ -155,41 +157,70 @@
         <div class="section-icon">💻</div>
         <h2>Stack Tecnológico</h2>
         <div class="tech-stack">
-          <span class="tech-badge">Angular</span>
-          <span class="tech-badge">TypeScript</span>
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
           <span class="tech-badge">Django</span>
           <span class="tech-badge">Python</span>
-          <span class="tech-badge">Machine Learning</span>
-          <span class="tech-badge">Natural Language Processing</span>
-          <span class="tech-badge">TensorFlow</span>
+          <span class="tech-badge">Groq API</span>
+          <span class="tech-badge">DeepFace</span>
+          <span class="tech-badge">OpenCV</span>
           <span class="tech-badge">REST API</span>
+          <span class="tech-badge">PostgreSQL</span>
+        </div>
+      </section>
+
+      <!-- GitHub Repository -->
+      <section class="github-section">
+        <div class="section-icon">🔗</div>
+        <h2>Repositorio</h2>
+        <div class="github-card">
+          <div class="github-card-info">
+            <div class="github-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </div>
+            <div class="github-card-text">
+              <h3>cyberse-kid / Back-Ingenieria</h3>
+              <p>Código fuente del backend de SmartIRecruit — Django, Groq API, DeepFace y OpenCV</p>
+            </div>
+          </div>
+          <a
+            href="https://github.com/cyberse-kid/Back-Ingenieria"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-button">
+            Ver en GitHub →
+          </a>
         </div>
       </section>
 
       <!-- Beneficios -->
       <section class="benefits-section">
         <div class="section-icon">💡</div>
-        <h2>Beneficios del Sistema</h2>
+        <h2>Impacto del Sistema</h2>
         <div class="benefits-grid">
           <div class="benefit-card">
             <div class="benefit-number">80%</div>
-            <h4>Ahorro de Tiempo</h4>
-            <p>Automatización del proceso de filtrado inicial</p>
+            <h4>Automatización</h4>
+            <p>Del proceso de preselección de candidatos</p>
           </div>
           <div class="benefit-card">
-            <div class="benefit-number">60%</div>
-            <h4>Reducción de Sesgos</h4>
-            <p>Evaluación objetiva basada en datos</p>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-number">95%</div>
-            <h4>Precisión</h4>
-            <p>Identificación de candidatos ideales</p>
+            <div class="benefit-number">~40%</div>
+            <h4>Reducción de Sesgo</h4>
+            <p>Menos variables subjetivas en la evaluación vs. proceso manual</p>
           </div>
           <div class="benefit-card">
             <div class="benefit-number">3x</div>
             <h4>Velocidad</h4>
-            <p>Proceso tres veces más rápido</p>
+            <p>Proceso de preselección tres veces más rápido</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-number">100%</div>
+            <h4>Trazabilidad</h4>
+            <p>Registro completo del proceso de evaluación por candidato</p>
           </div>
         </div>
       </section>
@@ -223,7 +254,6 @@
       [src]="selectedImage"
       class="lightbox-image"
       (click)="$event.stopPropagation()">
-
     <button class="lightbox-close" (click)="closeImage()">✕</button>
   </div>
 
